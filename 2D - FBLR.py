@@ -2,13 +2,15 @@ import random
 import matplotlib.pyplot as plt
 from pylab import savefig
 import numpy as np
+
+
 # Starting point
 X = [0]
 Y = [0]
 # Size of step
 s = 1
 # Number of steps to process
-steps = 100000
+steps = 10000
 # Movement functions
 def moveForward(x, y): return x, y + s
 def moveBackward(x, y): return x, y - s
@@ -33,4 +35,3 @@ plt.scatter(X2, Y2, c = range(steps * points), linewidths = 0, s = 3)
 plt.axis('equal')
 plt.title("2D Random Walk with " + str(steps) + " steps")
 plt.show()
-#savefig('foo.pdf', bbox_inches='tight')

@@ -10,7 +10,7 @@ Z = [0]
 #Size of step
 s = 1
 #Number of steps to process
-steps = 1000
+steps = 10000
 #Movement functions
 def moveForward(x, y, z) : return x, y + s, z
 def moveBackward(x, y, z) : return x, y - s, z
